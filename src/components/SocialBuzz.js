@@ -17,7 +17,7 @@ function SocialBuzz() {
       lastWeek.setDate(today.getDate() - 7);
       const formattedDate = lastWeek.toISOString().split('T')[0];
 
-      const response = await fetch(`https://newsapi.org/v2/everything?q=social+media&from=${formattedDate}&apiKey=${apiKey}`);
+      const response = await fetch(`https://social-media-dashboard-fullstack-ekpo.onrender.com=${formattedDate}&apiKey=${apiKey}`);
       
       if (!response.ok) {
         throw new Error('Failed to fetch news');

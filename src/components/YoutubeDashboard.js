@@ -14,7 +14,7 @@ function YoutubeDashboard() {
     setChannelData(null);
 
     try {
-      const response = await fetch(`http://localhost:5000/api/channel/${channelName}`);
+      const response = await fetch(`https://social-media-dashboard-fullstack-ekpo.onrender.com/api/channel/${channelName}`);
       
       if (!response.ok) {
         throw new Error('Channel not found or error in fetching data.');
